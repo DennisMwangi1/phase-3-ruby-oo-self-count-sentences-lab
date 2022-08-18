@@ -3,7 +3,11 @@ require 'pry'
 class String
 
   def sentence?
-    
+    if self.end_with?(".") 
+      true
+    else
+      false
+    end
   end
 
   def question?
@@ -18,3 +22,5 @@ class String
 
   end
 end
+
+puts "The weather outside is frightful.".sentence?
